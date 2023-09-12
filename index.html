@@ -28,24 +28,77 @@
 						  line-height: 1.2;
 						}
 					  </style>
-					<p>A CS undergrad with a passion for problem-solving and innovation.</p>
+					<!-- <p>A CS undergrad with a passion for problem-solving and innovation.</p> -->
 				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Things I Can Do</a></li>
-						<li><a href="#three">A Few Accomplishments</a></li>
-						<li><a href="#four">Contact</a></li>
-					</ul>
-				</nav>
+				<style>
+					/* Style the dropdown button */
+					.dropbtn {
+					  background-color: #4acaa8;
+					  color: white;
+					  padding: 12px;
+					  font-size: 16px;
+					  border: none;
+					  cursor: pointer;
+					}
+					
+					/* Style the dropdown content (hidden by default) */
+					.dropdown-content {
+					  display: none;
+					  position: absolute;
+					  background-color: #4acaa8;
+					  min-width: 160px;
+					  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+					  z-index: 1;
+					}
+					
+					/* Style the dropdown links */
+					.dropdown-content a {
+					  padding: 12px 16px;
+					  text-decoration: none;
+					  display: block;
+					  color: #333;
+					}
+					
+					/* Change color on hover */
+					.dropdown-content a:hover {
+					  background-color: #4acaa8 ;
+					  color: white;
+					}
+					
+					/* Show the dropdown menu when the dropdown button is hovered over */
+					.dropdown:hover .dropdown-content {
+					  display: block;
+					}
+					</style>
+					</head>
+					<body>
+					
+					<nav id="nav">
+						<ul>
+							<li><a href="#one" class="active">About</a></li>
+							<li><a href="#two">Skills & Interests</a></li>
+							<li class="dropdown">
+								<button class="dropbtn">Projects    &#9662;</button>
+								<div class="dropdown-content">
+									<a href="#AppDev">App Dev</a>
+									<a href="#Systems">Systems</a>
+									<a href="#OngoingProjects">Ongoing Projects</a>
+									<!-- Add more project links as needed -->
+								</div>
+							</li>
+							<li><a href="#four">My Blogs</a></li>
+							<li><a href="#five">Others</a></li>
+						</ul>
+					</nav>
+					</body>
 				<footer>
 					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+						<li><a href="https://www.linkedin.com/in/yuvraj-singh-bhadauria-927a1b1b9/" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://github.com/UvrajSB" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
+						<li><a href="mailto:f20201685@goa.bits-pilani.ac.in?to=*" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
 					</ul>
+					
 				</footer>
 			</section>
 
@@ -66,52 +119,140 @@
 										<!-- <p>Just an incredibly simple responsive site<br />
 										template freebie by <a href="http://html5up.net">HTML5 UP</a>.</p> -->
 									</header>
-									<p style="word-spacing: 5px;">I am a final year Computer Science student at Birla Institute of Technology Goa, with a passion for computers and a knack for hacking. I have been involved in computer science research related to distributed systems, federated learning, and mobile computing. I am currently a visiting research student at the WEISER group at the National University of Singapore, where I am working on contactless sensing of vitals. I am also an avid Android app developer and love developing apps that make a positive impact on the world.<br /><br />
+									<p>I am a final year Computer Science student at Birla Institute of Technology Goa, with a passion for computers and a knack for hacking. I have been involved in computer science research related to distributed systems, federated learning, and mobile computing. I am currently a visiting research student at the <a href="https://weiserlab.github.io/ambuj/index">WEISER</a> group at the National University of Singapore, where I am working on contactless sensing of vitals. I am also an avid Android app developer and love developing apps that make a positive impact on the world.<br /><br />
 										I am a highly motivated and self-driven individual with a strong interest in solving real-world problems using technology. I am also a team player and enjoy working with others to achieve common goals. I am confident that I have the skills and experience to make a significant contribution to the field of computer science.</p>
 								</div>
 							</section>
 
 						<!-- Two -->
-							<section id="two">
+						<section id="two">
+							<div class="container">
+								<h2>Skills and Interests</h2>
+								<p>I love learning and exploring different computer science interests. Eager to embrace new challenges, I've spent the past few years enjoying projects in these areas.</p>
+								<ul class="feature-icons">
+									<li class="icon solid fa-mobile">App development</li>
+									<li class="icon solid fa-chart-line">Systems Performance Monitoring</li>
+									<li class="icon solid fa-cogs">Federated Learning</li>
+									<li class="icon solid fa-wifi">Software Defined Radios</li>
+									<li class="icon solid fa-chart-bar">Data Analysis</li>
+									<li class="icon solid fa-signal">RF Signals</li>
+								</ul>
+							</div>
+						</section>
+						
+						
+						<!-- Three -->
+							<section id="AppDev">
 								<div class="container">
-									<h3>Things I Can Do</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
-									<ul class="feature-icons">
-										<li class="icon solid fa-code">Write all the code</li>
-										<li class="icon solid fa-cubes">Stack small boxes</li>
-										<li class="icon solid fa-book">Read books and stuff</li>
-										<li class="icon solid fa-coffee">Drink much coffee</li>
-										<li class="icon solid fa-bolt">Lightning bolt</li>
-										<li class="icon solid fa-users">Shadow clone technique</li>
-									</ul>
+									<h2>Projects</h2>
+									<h3 style="color:#4acaa8;">App development</h3>
+									<p>In my freshman year, I joined <a href="https://devsoc.club/"><span style="color:#4acaa8;">Devsoc</span></a>, sparking my passion for Android development. I not only honed my skills but also became a mentor, guiding fellow students.
+										In my penultimate year, I led Devsoc's App Development team, driving innovation and tackling complex challenges.
+										This journey shaped me from a curious freshman to a seasoned developer and leader.</p>
+									<!-- <p>For my research work I started working with these devices and realized that many of them have poor documentation and community support. This means you often have to experiment and figure things out on your own, which can be time-consuming and frustrating. That's why I decided to create tutorials that would make it easier for others to learn about these devices. I hope my tutorials will help you save time and get the most out of your time and devices.</p> -->
+									<div class="features">
+										<article>
+											<a href="https://play.google.com/store/apps/details?id=so.dev.unstoppable&hl=en&gl=US" target="_blank" class="image"><img src="images/Unstoppable.png" alt="" /></a>
+											<div class="inner">
+												<h4><a href="https://play.google.com/store/apps/details?id=so.dev.unstoppable&hl=en&gl=US" target="_blank">Unstoppable: Mindset Builder</a></h4>
+												<p>This project has always held a special place in my heart since it was part of my first internship, at <a href="https://abtris.com/" target="_blank"><span style="color:#4acaa8;">Abtris</span></a>. I developed the Android app from scratch, and it was later refined and maintained by the Abtris team. I also independently designed a neumorphic-themed interface, which was a novel concept and presented challenges due to limited community support at the time. Overall, this project provided both valuable challenges and a great learning experience for me.</p>
+											</div>
+										</article>
+										<article>
+											<div class="inner">
+												<h4><a href="https://github.com/UvrajSB/Cab-booking-app" target="_blank">Cab Booking App</a></h4>
+												<p>I have developed several such apps to teach app development to students. This particular app is designed to teach the latest library of navigation and animations, along with the major concepts of native Android development. This dummy taxi booking app allows you to book a cab and replicates many real-world taxi apps. You can also look at my sessions in the <span <a href="#five"><span style="color:#4acaa8;">Others</span></a> section.</p>
+											</div>
+											<a href="https://github.com/UvrajSB/Cab-booking-app" target="_blank" class="image"><img src="images/cab.png" alt=""  style="margin-left: 15px; max-width: 100%;"/></a>
+										</article>
+										<article>
+											<a href="https://play.google.com/store/apps/details?id=com.forgetit.android.forget_it_v0&hl=en-SG" target="_blank" class="image"><img src="images/Forgetit.png" alt="" /></a>
+											<div class="inner">
+												<h4><a href="https://play.google.com/store/apps/details?id=com.forgetit.android.forget_it_v0&hl=en-SG" target="_blank">Forget'it</a></h4>
+												<p>This was my first app to make it to Google Play, and it has an interesting story behind it. I was contacted by an alumnus to develop a Minimum Viable Product (MVP) for an idea. It was the first time I worked on a full-fledged product with a friend of mine, covering both frontend and backend development. During this project, I gained valuable experience in areas such as authentication, app publishing, using NoSQL databases, and integrating Firebase.</p>
+											</div>
+										</article>
+									</div>
+									<div class="other-projects">
+										<p>
+											I've created various apps, including a Shopping App, Uber Clone, and a Quiz App. I've also contributed to <a href="https://play.google.com/store/apps/details?id=com.ichi2.anki&hl=en&gl=US"><span style="color:#4acaa8;">Ankidroid</span></a>, an open-source project with over 10 million users, by having multiple <a href="https://docs.google.com/document/d/1j2PYs0MxYH9cGrD1-yvARF2HvuN6hG2Cghhui16m3DQ/edit?usp=sharing" target="_blank"><span style="color:#4acaa8;">PRs</span></a> merged. To know more about them you can visit my GitHub profile.
+										</p>
+									</div>
+								
 								</div>
 							</section>
 
-						<!-- Three -->
-							<section id="three">
+							<section id="Systems">
 								<div class="container">
-									<h3>A Few Accomplishments</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+									<h3 style="color:#4acaa8;">Systems</h3>
+									<p>During my second year in college, I developed a keen interest in exploring innovative and advanced technology. This shift in my focus led me from software development to the world of research. Fortunately, I had the privilege of being mentored by <a href="https://arnabkrpaul.github.io/" target="_blank"><span style="color:#4acaa8;">Dr. Arnab K. Paul</span></a>, and together, we worked on several projects that marked the beginning of my exploration into complex system-related topics.</p>
+									<!-- <p>For my research work I started working with these devices and realized that many of them have poor documentation and community support. This means you often have to experiment and figure things out on your own, which can be time-consuming and frustrating. That's why I decided to create tutorials that would make it easier for others to learn about these devices. I hope my tutorials will help you save time and get the most out of your time and devices.</p> -->
 									<div class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<a class="image"><img src="images/DashLab.png" alt="" /></a>
 											<div class="inner">
-												<h4>Possibly broke spacetime</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>Performance Monitoring System</h4>
+												<p>The project initially aimed to create a performance monitoring system for a distributed cluster. I began by using sar scripts for data collection and transmission to a master node via PubSub architecture. Later, we explored Performance Co-pilot, a complex tool with expert-level documentation, making its setup challenging. During this process, I utilized Grafana to display the statistics after storing the data in a Redis server. This project served as my introduction to systems work, providing valuable insights and learning experiences.</p>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
 											<div class="inner">
-												<h4>Terraformed a small moon</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4><a href="https://github.com/UvrajSB/DSTN_Client" target="_blank">Storage Management and Analysis of GeoFencing Data</a></h4>
+												<p>This project utilizes MQTT via HiveMQ to facilitate efficient data transmission from client devices to a distributed file system. Initially considering Kafka's scalability, hardware constraints led to the choice of HiveMQ. The Android client app, featuring core functionality in Java and a Kotlin-based user interface, relies on Android's location API to access real-time device coordinates. The app subscribes to the MQTT broker, continuously monitoring device messages. Upon detecting location changes, it employs MQTT's publish method to relay updated coordinates to the broker, ensuring seamless data storage in the parallel file system.</p>
+											</div>
+											<a href="https://github.com/UvrajSB/DSTN_Client" target="_blank" class="image"><img src="images/location.png" alt="" style="margin-left: 15px; max-width: 100%;"//></a>
+										</article>
+										<article>
+											<a class="image" href="https://drive.google.com/file/d/1h5n6zqr2IYBJ7N1x_lTldQIOInWyCCO8/view?usp=sharing" target="_blank"><img src="images/chain.png" alt="" /></a>
+											<div class="inner">
+												<h4><a href="https://github.com/pranayvarshney/Flipkart-Grid" target="_blank">Blockchain Based Warranty System </a></h4>
+												<p>I played a key role in developing a Solidity-based contract for a blockchain-powered warranty system. Our innovation included creating NFTs for products, enabling users to claim warranties, verify ownership, and confirm product authenticity. My responsibilities encompassed developing the Solidity code and contributing to system design. This project harnessed blockchain's capabilities to revolutionize warranty management and product verification.</p>
 											</div>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+									</div>
+								</div>
+							</section>
+							<section id="OngoingProjects">
+								<div class="container">
+									<h3 style="color:#4acaa8;">Ongoing Projects</h3>
+									<p></p>
+									<!-- <p>For my research work I started working with these devices and realized that many of them have poor documentation and community support. This means you often have to experiment and figure things out on your own, which can be time-consuming and frustrating. That's why I decided to create tutorials that would make it easier for others to learn about these devices. I hope my tutorials will help you save time and get the most out of your time and devices.</p> -->
+									<div class="features">
+										<article>
+											<!-- <a class="image"><img src="images/DashLab.png" alt="" /></a> -->
+											<div class="inner" style="width: 100%;">
+												<h4>Sensing Using Tunnel diodes</h4>
+												<p style="width: 100%;">Under the guidance of <a href="https://weiserlab.github.io/ambuj/position" target="_blank"><span style="color:#4acaa8;">Dr. Ambuj Varshney</span></a>, I'm actively involved in an ongoing project that revolves around the development of energy-efficient methods for non-invasive vital sign sensing. This project has provided me with a remarkable opportunity to immerse myself in various cutting-edge technologies.
+
+													As part of this initiative, I've been working with an array of advanced devices, including Software-Defined Radios (SDRs) and Tunnel Diode technology, alongside other innovative tools. These hands-on experiences have allowed me to explore the fascinating realms of Digital Signal Processing and data analysis.</p>
+											</div>
+										</article>
+										<article>
+											<!-- <a class="image"><img src="images/DashLab.png" alt="" /></a> -->
+											<div class="inner" style="width: 100%;">
+												<h4>Federated Learning: System Optimisations And Privacy</h4>
+												<p style="width: 100%;">
+													Over the past several months, I've been deeply involved in the world of Federated Learning, guided by <a href="https://arnabkrpaul.github.io/" target="_blank"><span style="color:#4acaa8;">Dr. Arnab K. Paul</span></a> and <a href="https://cse.umn.edu/cs/ali-anwar" target="_blank"><span style="color:#4acaa8;">Dr. Ali Anwar</span></a>. My main focus has been on privacy issues in Federated Learning and finding ways to address these concerns. I'm working on solutions using advanced techniques like Differential Privacy, Homomorphic Encryption, and Secure Multi-party Computation.
+													In addition to privacy, I'm also looking into making Federated Learning systems work better and more efficiently. I'm exploring ways to improve how these systems operate and how different parties can collaborate effectively in the context of Federated Learning.</p>
+											</div>
+										</article>
+
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four">
+								<div class="container">
+									<h3>My Blogs</h3>
+									<!-- <p>For my research work I started working with these devices and realized that many of them have poor documentation and community support. This means you often have to experiment and figure things out on your own, which can be time-consuming and frustrating. That's why I decided to create tutorials that would make it easier for others to learn about these devices. I hope my tutorials will help you save time and get the most out of your time and devices.</p> -->
+									<div class="features">
+										<article>
+											<a href="https://medium.com/@mryuvrajsbhadauria/getting-started-with-spectrum-analysis-using-the-adalm-pluto-series-641b7ccac1bb" target="_blank" class="image"><img src="images/AdalmPlutoPoster.png" alt="" /></a>
 											<div class="inner">
-												<h4>Snapped dark matter in the wild</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+												<h4>Getting Started with Spectrum Analysis using Adalm Pluto</h4>
+												<p>Learn how to use a affordable SDR as a Spectrum Analyzer using GUI Software Satsagen or write scripts to control it using Python or Matlab.</p>
 											</div>
 										</article>
 									</div>
@@ -119,7 +260,34 @@
 							</section>
 
 						<!-- Four -->
-							<section id="four">
+							<section id="five">
+								<div class="container">
+									<h3>Others</h3>
+									<p>I have a strong passion for connecting with people through knowledge sharing. Teaching has been a powerful means for me to achieve this goal. Over the years, I have conducted more than 50 sessions, catering to diverse audiences, ranging from first-year undergraduates to Master's students. These sessions have been delivered through various formats, encompassing both in-person and online modes of instruction.<br/>In addition to teaching, I have a strong affinity for tech consulting, which involves leveraging my knowledge to assist others in discovering better solutions and making informed decisions</p>
+									<!-- <p>For my research work I started working with these devices and realized that many of them have poor documentation and community support. This means you often have to experiment and figure things out on your own, which can be time-consuming and frustrating. That's why I decided to create tutorials that would make it easier for others to learn about these devices. I hope my tutorials will help you save time and get the most out of your time and devices.</p> -->
+									<div class="features">
+										<article>
+											<a href="https://www.youtube.com/watch?v=RIQN356dJ3k&t=4811s" target="_blank" class="image"><img src="images/asj.png" alt="" /></a>
+											<div class="inner">
+												<h4 ><a href="https://www.youtube.com/watch?v=RIQN356dJ3k&t=4811s" target="_blank">Kickstart Android App Development</a></h4>
+												<p>I have conducted sessions for three different clubs, a university course, and an external organization. Additionally, I served as a Teaching Assistant for an app development course at my university. The video featured here is from one of my sessions, where I introduced participants to the exciting journey of kickstarting app development.</p>
+											</div>
+										</article>
+										<article>
+											<a href="https://drive.google.com/file/d/1Y-7XviZMxSsfLNuIlW1zCGRmLcZkRc-8/view?usp=sharing" target="_blank" class="image"><img src="images/Share.png" alt="" /></a>
+											<div class="inner">
+												<h4><a href="https://www.share-share.org/" target="_blank">Consulting @ ShARE </a></h4>
+												<p>I graduated from the ShARE 1-year leadership program, where I collaborated with a diverse team of members from various parts of the world. Together, we worked on solving societal issues using the consulting skills acquired during the program. As a result of our efforts, we conducted a critical analysis and developed a solution proposal on "How to Combat Counterfeit Medicines." You can watch our team's final presentation on this topic.</p>
+											</div>
+										</article>
+									</div>
+								</div>
+						</section>
+
+
+
+
+							<!-- <section id="four">
 								<div class="container">
 									<h3>Contact Me</h3>
 									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
@@ -138,7 +306,7 @@
 										</div>
 									</form>
 								</div>
-							</section>
+							</section> -->
 
 						<!-- Five -->
 						<!--
